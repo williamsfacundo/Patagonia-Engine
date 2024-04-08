@@ -7,6 +7,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PatagoniaEngine", "Patagoni
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineTestApplication", "..\EngineTestApplication\EngineTestApplication.vcxproj", "{F976C401-31F6-4E90-9C71-B1902731A998}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D38F62CF-5586-4CD2-B503-F09CBA417A7B}"
+	ProjectSection(SolutionItems) = preProject
+		..\engine documentation.txt = ..\engine documentation.txt
+		..\resources.txt = ..\resources.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
