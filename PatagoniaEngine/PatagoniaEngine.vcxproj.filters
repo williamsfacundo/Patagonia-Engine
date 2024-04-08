@@ -17,5 +17,16 @@
   <ItemGroup>
     <Text Include="files\documentation\explanations\project related.txt" />
     <Text Include="files\documentation\resources.txt" />
+    <Text Include="files\documentation\explanations\engine application class.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\patagonia engine\application\patagonia_application.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\application\patagonia_application.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

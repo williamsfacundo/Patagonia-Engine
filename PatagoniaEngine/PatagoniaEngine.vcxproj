@@ -145,8 +145,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="files\documentation\explanations\engine application class.txt" />
     <Text Include="files\documentation\explanations\project related.txt" />
     <Text Include="files\documentation\resources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\patagonia engine\application\patagonia_application.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\application\patagonia_application.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

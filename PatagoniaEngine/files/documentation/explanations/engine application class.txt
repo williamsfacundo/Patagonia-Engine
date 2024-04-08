@@ -1,0 +1,4 @@
+1) Virtual Destructor: 
+
+	- allows the user to extend from my engine class: 
+	- When the destructor of the "derived" class is called, the destructor of the "base" class is called  
