@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PatagoniaEngine", "PatagoniaEngine.vcxproj", "{4AE6487D-9E13-4044-A0B5-84FD72958A9F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineTestApplication", "..\EngineTestApplication\EngineTestApplication.vcxproj", "{F976C401-31F6-4E90-9C71-B1902731A998}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4AE6487D-9E13-4044-A0B5-84FD72958A9F} = {4AE6487D-9E13-4044-A0B5-84FD72958A9F}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D38F62CF-5586-4CD2-B503-F09CBA417A7B}"
 	ProjectSection(SolutionItems) = preProject

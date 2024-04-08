@@ -5,3 +5,7 @@ FOLDERS
  * samples: example applications to test the engine
 
 APPLICATION TYPE: dynamic library (DLL)
+
+Test Application
+
+	* Must be set as the starting proyect (the engine is not an executable)
