@@ -1,0 +1,7 @@
+FOLDERS
+
+ * Include: here goes the interfaces provided by the engine for the users
+ * source: hiden source file that "contains" engine functionalities
+ * samples: example applications to test the engine
+
+APPLICATION TYPE: dynamic library (DLL)
