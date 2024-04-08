@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.33927.289
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PatagoniaEngine", "PatagoniaEngine.vcxproj", "{4AE6487D-9E13-4044-A0B5-84FD72958A9F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineTestApplication", "..\EngineTestApplication\EngineTestApplication.vcxproj", "{F976C401-31F6-4E90-9C71-B1902731A998}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{4AE6487D-9E13-4044-A0B5-84FD72958A9F}.Release|x64.Build.0 = Release|x64
 		{4AE6487D-9E13-4044-A0B5-84FD72958A9F}.Release|x86.ActiveCfg = Release|Win32
 		{4AE6487D-9E13-4044-A0B5-84FD72958A9F}.Release|x86.Build.0 = Release|Win32
+		{F976C401-31F6-4E90-9C71-B1902731A998}.Debug|x64.ActiveCfg = Debug|x64
+		{F976C401-31F6-4E90-9C71-B1902731A998}.Debug|x64.Build.0 = Debug|x64
+		{F976C401-31F6-4E90-9C71-B1902731A998}.Debug|x86.ActiveCfg = Debug|Win32
+		{F976C401-31F6-4E90-9C71-B1902731A998}.Debug|x86.Build.0 = Debug|Win32
+		{F976C401-31F6-4E90-9C71-B1902731A998}.Release|x64.ActiveCfg = Release|x64
+		{F976C401-31F6-4E90-9C71-B1902731A998}.Release|x64.Build.0 = Release|x64
+		{F976C401-31F6-4E90-9C71-B1902731A998}.Release|x86.ActiveCfg = Release|Win32
+		{F976C401-31F6-4E90-9C71-B1902731A998}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
