@@ -1,30 +1,35 @@
-#include "patagonia-engine/application/patagonia_application.h"
+#include <patagonia/application/patagonia_application.h>
+
+#include <patagonia/core/patagonia_common.h>
+#include <patagonia/engine/patagonia_engine.h>
 
 #include <stdexcept>
 
-namespace PatagoniaEngine
+namespace Patagonia
 {
-	PatagoniaApplication* PatagoniaApplication::m_engineApplicationInstance = nullptr;
+	PatagoniaApplication* PatagoniaApplication::m_instance = nullptr;
 
 	PatagoniaApplication::PatagoniaApplication()
 	{
-		PATAGONIA_ASSERT(!m_engineApplicationInstance);
+		PATAGONIA_ASSERT(!m_instance);
 		
-		m_engineApplicationInstance = this;
+		m_instance = this;
 		
+		m_engine = createPatagoniaEngine();
+
 		m_isRunning = true;
 	}
 
 	PatagoniaApplication::~PatagoniaApplication()
 	{
-
+		m_engine->release();
 	}
 
 	PatagoniaApplication* PatagoniaApplication::getEngineApplication()
 	{
-		PATAGONIA_ASSERT(m_engineApplicationInstance);
+		PATAGONIA_ASSERT(m_instance);
 
-		return m_engineApplicationInstance;
+		return m_instance;
 	}
 	
 	void PatagoniaApplication::startEngineApplication()

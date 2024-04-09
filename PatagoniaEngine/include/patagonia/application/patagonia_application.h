@@ -1,9 +1,10 @@
 #ifndef PATAGONIA_APPLICATION_H
 #define PATAGONIA_APPLICATION_H
 
-#include "patagonia-engine/core/patagonia_common.h"
+#include <patagonia/core/patagonia_common.h>
+#include <patagonia/engine/patagonia_engine.h>
 
-namespace PatagoniaEngine
+namespace Patagonia
 {
 	class PATAGONIA_API PatagoniaApplication
 	{
@@ -22,10 +23,10 @@ namespace PatagoniaEngine
 		void startEngineApplication();
 		void finishEngineApplication();
 
-	private:
-		const char* DoubleIntanceCreationRuntimeErrorMessage = "The engine application was already created, there can not be two intances at the same time!";
+	private:		
+		static PatagoniaApplication* m_instance;
 
-		static PatagoniaApplication* m_engineApplicationInstance;
+		PatagoniaEngine* m_engine;
 
 		bool m_isRunning;
 	};	
