@@ -17,6 +17,21 @@ namespace TestGameApplication
 
 	}
 
+	void TestGame::onEngineInput()
+	{
+
+	}
+
+	void TestGame::onEngineUpdate()
+	{
+
+	}
+	
+	void TestGame::onEngineDraw()
+	{
+
+	}
+
 	void TestGame::onEngineQuit()
 	{
 
