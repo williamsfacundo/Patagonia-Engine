@@ -8,15 +8,10 @@ namespace PatagoniaEngine
 
 	PatagoniaApplication::PatagoniaApplication()
 	{
-		if(!m_engineApplicationInstance)
-		{
-			m_engineApplicationInstance = this;
-		}
-		else
-		{
-			throw std::runtime_error(DoubleIntanceCreationRuntimeErrorMessage);
-		}
-
+		PATAGONIA_ASSERT(!m_engineApplicationInstance);
+		
+		m_engineApplicationInstance = this;
+		
 		m_isRunning = true;
 	}
 
@@ -27,6 +22,8 @@ namespace PatagoniaEngine
 
 	PatagoniaApplication* PatagoniaApplication::getEngineApplication()
 	{
+		PATAGONIA_ASSERT(m_engineApplicationInstance);
+
 		return m_engineApplicationInstance;
 	}
 	
