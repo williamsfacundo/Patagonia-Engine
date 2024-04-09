@@ -1,4 +1,20 @@
 1) Virtual Destructor: 
 
 	- allows the user to extend from my engine class: 
-	- When the destructor of the "derived" class is called, the destructor of the "base" class is called  
+	- When the destructor of the "derived" class is called, the destructor of the "base" class is called
+
+2) Engine Application instance
+
+	- We only want "ONE" posible engine application to be running
+
+3) What happens if we want to extend the engine application into a user application?
+
+	a) 
+		* The engine application is part of a dynamic library
+		* Can we simply compile the library and use the engine application class in an extern application?
+		* NO
+		* WHY?
+		* We have to export the "simbols" of this class an its methods so it is "visible" by the "extern" class
+		* This symbols are exported to the "lib" file (static part of the library)
+		* So then how we use the class?
+		* We have to "link" the "lib" files into the external application
