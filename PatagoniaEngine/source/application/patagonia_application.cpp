@@ -16,6 +16,8 @@ namespace PatagoniaEngine
 		{
 			throw std::runtime_error(DoubleIntanceCreationRuntimeErrorMessage);
 		}
+
+		m_isRunning = true;
 	}
 
 	PatagoniaApplication::~PatagoniaApplication()
@@ -30,11 +32,18 @@ namespace PatagoniaEngine
 	
 	void PatagoniaApplication::startEngineApplication()
 	{
+		onEngineInit();
 
+		while (m_isRunning)
+		{
+			m_isRunning = false;
+		}
+
+		onEngineQuit();
 	}
 	
 	void PatagoniaApplication::finishEngineApplication()
 	{
-
+		m_isRunning = false;
 	}
 }

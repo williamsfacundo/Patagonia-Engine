@@ -14,6 +14,9 @@ namespace PatagoniaEngine
 		static PatagoniaApplication* getEngineApplication();
 		
 		virtual void onEngineInit() = 0;
+		virtual void onEngineInput() = 0;
+		virtual void onEngineUpdate() = 0;
+		virtual void onEngineDraw() = 0;
 		virtual void onEngineQuit() = 0;
 
 		void startEngineApplication();
@@ -23,6 +26,8 @@ namespace PatagoniaEngine
 		const char* DoubleIntanceCreationRuntimeErrorMessage = "The engine application was already created, there can not be two intances at the same time!";
 
 		static PatagoniaApplication* m_engineApplicationInstance;
+
+		bool m_isRunning;
 	};	
 }
 

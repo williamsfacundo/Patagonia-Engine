@@ -13,6 +13,12 @@ namespace TestGameApplication
 			
 		virtual void onEngineInit() override;
 
+		virtual void onEngineInput() override;
+
+		virtual void onEngineUpdate() override;
+
+		virtual void onEngineDraw() override;
+
 		virtual void onEngineQuit() override;
 
 	private:
