@@ -1,8 +1,15 @@
 FOLDERS
 
  * Include: here goes the interfaces provided by the engine for the users
+	
+	- Application: where my main engine application class header will be
+
+	- Core: the most important thing the engine will need
+
  * source: hiden source file that "contains" engine functionalities
+ 
  * samples: example applications to test the engine
+
 
 APPLICATION TYPE: dynamic library (DLL)
 

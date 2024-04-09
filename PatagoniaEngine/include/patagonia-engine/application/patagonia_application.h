@@ -1,9 +1,11 @@
 #ifndef PATAGONIA_APPLICATION_H
 #define PATAGONIA_APPLICATION_H
 
+#include "patagonia-engine/core/patagonia_common.h"
+
 namespace PatagoniaEngine
 {
-	class PatagoniaApplication
+	class PATAGONIA_API PatagoniaApplication
 	{
 	public:
 		PatagoniaApplication();
