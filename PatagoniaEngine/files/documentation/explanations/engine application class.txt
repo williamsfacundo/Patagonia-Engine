@@ -19,3 +19,7 @@ What happens if we want to extend the engine application into a user application
 	* So then how we use the class?
 	* We have to "link" the "lib" files into the external application
 	* What we are going to use to do this: https://learn.microsoft.com/en-us/cpp/cpp/dllexport-dllimport?view=msvc-170 (dllexport, dllimport)
+
+How can we stop the execution of the program if a condition is met?
+
+	* We will create a directive call Assert

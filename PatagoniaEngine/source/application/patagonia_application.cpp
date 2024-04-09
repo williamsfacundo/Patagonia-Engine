@@ -1,40 +1,51 @@
-#include "patagonia-engine/application/patagonia_application.h"
+#include <patagonia/application/patagonia_application.h>
+
+#include <patagonia/core/patagonia_common.h>
+#include <patagonia/engine/patagonia_engine.h>
 
 #include <stdexcept>
 
-namespace PatagoniaEngine
+namespace Patagonia
 {
-	PatagoniaApplication* PatagoniaApplication::m_engineApplicationInstance = nullptr;
+	PatagoniaApplication* PatagoniaApplication::m_instance = nullptr;
 
 	PatagoniaApplication::PatagoniaApplication()
 	{
-		if(!m_engineApplicationInstance)
-		{
-			m_engineApplicationInstance = this;
-		}
-		else
-		{
-			throw std::runtime_error(DoubleIntanceCreationRuntimeErrorMessage);
-		}
+		PATAGONIA_ASSERT(!m_instance);
+		
+		m_instance = this;
+		
+		m_engine = createPatagoniaEngine();
+
+		m_isRunning = true;
 	}
 
 	PatagoniaApplication::~PatagoniaApplication()
 	{
-
+		m_engine->release();
 	}
 
 	PatagoniaApplication* PatagoniaApplication::getEngineApplication()
 	{
-		return m_engineApplicationInstance;
+		PATAGONIA_ASSERT(m_instance);
+
+		return m_instance;
 	}
 	
 	void PatagoniaApplication::startEngineApplication()
 	{
+		onEngineInit();
 
+		while (m_isRunning)
+		{
+			m_isRunning = false;
+		}
+
+		onEngineQuit();
 	}
 	
 	void PatagoniaApplication::finishEngineApplication()
 	{
-
+		m_isRunning = false;
 	}
 }
