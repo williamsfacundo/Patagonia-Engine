@@ -1,4 +1,4 @@
-#include "../../include/patagonia engine/application/patagonia_application.h"
+#include "patagonia-engine/application/patagonia_application.h"
 
 namespace PatagoniaEngine
 {
