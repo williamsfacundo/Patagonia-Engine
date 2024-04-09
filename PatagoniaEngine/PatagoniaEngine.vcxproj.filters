@@ -20,15 +20,24 @@
     <Text Include="files\documentation\explanations\engine application class.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\patagonia-engine\application\patagonia_application.h">
+    <ClInclude Include="include\patagonia\application\patagonia_application.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="include\patagonia-engine\core\patagonia_common.h">
+    <ClInclude Include="include\patagonia\core\patagonia_common.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\patagonia\engine\patagonia_engine.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="source\engine\concrete_patagonia_engine.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\application\patagonia_application.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="source\engine\concrete_patagonia_engine.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

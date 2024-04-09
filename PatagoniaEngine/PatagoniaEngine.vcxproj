@@ -152,11 +152,14 @@
     <Text Include="files\documentation\resources.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\patagonia-engine\application\patagonia_application.h" />
-    <ClInclude Include="include\patagonia-engine\core\patagonia_common.h" />
+    <ClInclude Include="include\patagonia\application\patagonia_application.h" />
+    <ClInclude Include="include\patagonia\core\patagonia_common.h" />
+    <ClInclude Include="include\patagonia\engine\patagonia_engine.h" />
+    <ClInclude Include="source\engine\concrete_patagonia_engine.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\application\patagonia_application.cpp" />
+    <ClCompile Include="source\engine\concrete_patagonia_engine.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
